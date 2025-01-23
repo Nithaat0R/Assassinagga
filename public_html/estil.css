@@ -1,0 +1,284 @@
+body{
+  background-color: #bfbaa4;
+  margin: 0;
+  padding: 0;
+}
+
+/* MENU SUPERIOR*/
+
+.menu-superior {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 20px;
+  background-color: #738c39;
+}
+
+.menu-superior  div img {
+  height: 50px;
+}
+
+.subHeader {
+  background-color: rgba(115, 140, 57, 70%);
+  width: 100%;
+  height: 20px;
+}
+
+#button-hide-elements{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* CARRITO */
+
+.carrito-container{
+  background-color: #776255;
+  border-radius: 10px;
+  padding: 10px;
+
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+.producte-cabas{
+  background-color: #615045;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+
+/* CARRITO PETIT */
+
+#carrito-petit{
+  background-color: rgba(115, 140, 57, 70%);
+
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+#resum-carrito{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+/*Menu desplegable*/
+
+#menu-desplegable ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+  font-family: 'Gill Sans MT';
+}
+
+#menu-desplegable li {
+  padding: 8px 12px; /* Espaciado en las opciones del menú */
+}
+
+#menu-desplegable li a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: black; /* Color del texto */
+}
+
+#menu-desplegable li:hover {
+  background-color: #f0f0f0;
+  color: blue;
+}
+
+/* CONTENIDOR GENERAL */
+
+.container {
+  width: 70vw;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* MENU CATEGORIES I PRODUCTES*/
+
+#llistat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+  
+}
+
+.card{
+  background-color: #776255;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+  padding: 5px;
+  place-items: center;
+
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+.card img{
+  width: 90%;
+  height: 90%;
+
+  transition: filter 1s ease;
+  transition: transform 0.6s ease;
+}
+
+.card img:hover{
+  filter: blur(0.5px);
+  transform: scale(1.05)
+}
+
+/* DETALL PRODUCTES */
+
+.expositor{
+  display: grid;
+  grid-template-areas: 
+  'titol preu'
+  'imatge descripcio';
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 10px;
+
+  background-color: #776255;
+  border-radius: 10px;
+
+  font-family: 'Gill Sans MT';
+  font-weight: bold;
+  font-size: large;
+  color: white;
+
+  padding: 10px;
+}
+
+#imatge{
+  width: 90%;
+  height: 90%;
+}
+
+/* LOGIN */
+
+.forms-container {
+  background-color: #776255;
+  border-radius: 10px;
+  width: 40%;
+  
+  place-self: center;
+  place-items: center;
+  padding: 4px;
+}
+
+.login-forms {
+  
+  font-family: 'Gill Sans MT';
+  color: white;
+
+  width: 80%;
+  
+  gap: 5px;
+  padding: 20px;
+
+  display: grid;;
+}
+
+.login-forms input[type="submit"]{
+  margin-top: 10px;
+  height: 100%;
+  border-radius: 3px;
+
+  font-family: 'Gill Sans MT';
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+
+  background-color: #5e5047;
+  border: None;
+}
+
+.login-forms input[type="submit"]:hover{
+  filter: opacity(0.8);
+}
+
+/* REGISTRE */
+
+.register-forms {
+  
+  font-family: 'Gill Sans MT';
+  color: white;
+
+  width: 80%;
+  
+  gap: 5px;
+  padding: 20px;
+
+  display: grid;;
+}
+
+.register-forms input[type="submit"]{
+  margin-top: 10px;
+  height: 100%;
+  border-radius: 3px;
+
+  font-family: 'Gill Sans MT';
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+
+  background-color: #5e5047;
+  border: None;
+}
+
+.register-forms input[type="submit"]:hover{
+  filter: opacity(0.8);
+}
+
+/* COMPTE */
+
+.compte-container {
+  background-color: #776255;
+  border-radius: 10px;
+  width: 40%;
+  
+  place-self: center;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-family: 'Gill Sans MT';
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.compte-container, h2{
+  place-self: center;
+}
+
+
+.compte-container, h3{
+  place-self: left;
+}
+
+.modifica-dades {
+  background-color: #da493e;
+  border-radius: 10px;
+  
+  color: rgb(155, 70, 70);
+  font-size: medium;
+  font-weight: bold;
+
+  place-self: center;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
